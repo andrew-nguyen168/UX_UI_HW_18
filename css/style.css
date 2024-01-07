@@ -1,20 +1,18 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* Update font later */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+h1 {
+    padding: 2%;
 }
 
-<<<<<<< Updated upstream
-.logo {
-    height: 100px;
-    width: 100px;
-=======
 /* ------ Navigation ------ */
 .navigation {
     border-bottom: 1px solid #B2B2B2;
 }
 .logo {
     height:100px;
->>>>>>> Stashed changes
 }
 .inline-block {
     display: inline-block;
@@ -25,17 +23,6 @@ body{
     width: 23%;
 }
 nav {
-<<<<<<< Updated upstream
-    width: 73%;
-    padding: 1%;
-    text-align: right;
-    font-weight: bold;
-    border: 1px solid red;
-}
-nav li {
-    padding: 2%;
-    border: 1px solid red;
-=======
     width: 92%;
     padding: 1px;
     text-align: right;
@@ -44,62 +31,83 @@ nav li {
 nav li {
     padding: 3%;
     font-weight: bold;
->>>>>>> Stashed changes
 }
 
 /* ------ Hero Section ------ */
 ul {
     width: 50%;
     margin-left: auto;
-<<<<<<< Updated upstream
-    border: 1px solid red;
-}
-.heroImg {
-  height:700px;
-  padding: 25px;
-  border: 1px solid red;
-=======
 }
 .heroImg {
   height:500px;
   padding: 25px;
   border: 1px solid;
->>>>>>> Stashed changes
 }
 .content {
     width: 50%;
     margin: 0 auto;
-<<<<<<< Updated upstream
-    border: 1px solid red;
-=======
     box-shadow: 5px;
->>>>>>> Stashed changes
+}
+
+/* ----- My Skills Section ------ */
+.mySkills {
+    height: 700px;
+}
+.flexContainer {
+    display:flex;
+}
+.skill {
+    width:33%;
+    margin:30px 50px;
+    padding: 30px;
+    border: 1px solid;
+}
+
+/* ------ My Work Section ------ */
+.myWork {
+    height: 800px;
+    border: 1px solid;
+}
+.workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "enroute mindfulReader" 
+    "ato ndis";
+
+}
+.projectContainer {
+    border: 1px solid;
+    padding: 50px;
+    /* top > right > bottom > left */
+    margin: 30px 10px 30px 10px;
+}
+#Enroute {
+    grid-area: enroute;
+}
+#mindfulReader {
+    grid-area: mindfulReader;
+}
+#ATO {
+    grid-area: ato;
+}
+#NDIS {
+    grid-area: ndis;
 }
 
 /* ----- Footer ------ */
 footer {
     background-color: #373738;
     padding-right: 10%;
-<<<<<<< Updated upstream
-    color:white;
-    border: 1px solid red;
-=======
     color: white;
     font-weight: bold;
->>>>>>> Stashed changes
 }
 footer ul {
     display: inline-block;
     vertical-align: top;
     padding-left: 45%;
-<<<<<<< Updated upstream
-    border: 1px solid red;
-    text-align: right;
-=======
->>>>>>> Stashed changes
 }
 footer li {
     padding: 3%;
-    border: 1px solid red;
 }
 
