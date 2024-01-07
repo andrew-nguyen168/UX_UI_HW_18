@@ -3,20 +3,29 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< Updated upstream
 .logo {
     height: 100px;
     width: 100px;
+=======
+/* ------ Navigation ------ */
+.navigation {
+    border-bottom: 1px solid #B2B2B2;
+}
+.logo {
+    height:100px;
+>>>>>>> Stashed changes
 }
 .inline-block {
     display: inline-block;
     vertical-align: top;
 }
-.inline-block logo {
+.inline-block logo { 
+    /* Coding here doesn't change anything */
     width: 23%;
-    padding: 1%;
-    text-align: center;
 }
 nav {
+<<<<<<< Updated upstream
     width: 73%;
     padding: 1%;
     text-align: right;
@@ -26,34 +35,68 @@ nav {
 nav li {
     padding: 2%;
     border: 1px solid red;
+=======
+    width: 92%;
+    padding: 1px;
+    text-align: right;
+    /* border: 1px solid; */
 }
+nav li {
+    padding: 3%;
+    font-weight: bold;
+>>>>>>> Stashed changes
+}
+
+/* ------ Hero Section ------ */
 ul {
     width: 50%;
     margin-left: auto;
+<<<<<<< Updated upstream
     border: 1px solid red;
 }
 .heroImg {
   height:700px;
   padding: 25px;
   border: 1px solid red;
+=======
+}
+.heroImg {
+  height:500px;
+  padding: 25px;
+  border: 1px solid;
+>>>>>>> Stashed changes
 }
 .content {
     width: 50%;
     margin: 0 auto;
+<<<<<<< Updated upstream
     border: 1px solid red;
+=======
+    box-shadow: 5px;
+>>>>>>> Stashed changes
 }
+
+/* ----- Footer ------ */
 footer {
     background-color: #373738;
     padding-right: 10%;
+<<<<<<< Updated upstream
     color:white;
     border: 1px solid red;
+=======
+    color: white;
+    font-weight: bold;
+>>>>>>> Stashed changes
 }
 footer ul {
     display: inline-block;
     vertical-align: top;
     padding-left: 45%;
+<<<<<<< Updated upstream
     border: 1px solid red;
     text-align: right;
+=======
+>>>>>>> Stashed changes
 }
 footer li {
     padding: 3%;
