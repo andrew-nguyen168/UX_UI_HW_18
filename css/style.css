@@ -26,7 +26,6 @@ nav {
     width: 92%;
     padding: 1px;
     text-align: right;
-    /* border: 1px solid; */
 }
 nav li {
     padding: 3%;
@@ -54,19 +53,18 @@ ul {
     height: 700px;
 }
 .flexContainer {
-    display:flex;
+    display: flex;
 }
 .skill {
     width:33%;
     margin:30px 50px;
     padding: 30px;
-    border: 1px solid;
+
 }
 
 /* ------ My Work Section ------ */
 .myWork {
     height: 800px;
-    border: 1px solid;
 }
 .workGrid {
     display: grid;
@@ -74,10 +72,8 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "enroute mindfulReader" 
     "ato ndis";
-
 }
 .projectContainer {
-    border: 1px solid;
     padding: 50px;
     /* top > right > bottom > left */
     margin: 30px 10px 30px 10px;
@@ -111,3 +107,16 @@ footer li {
     padding: 3%;
 }
 
+/* Mobile Media Query */
+@media only screen and (max-width: 600) {
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "enroute"
+        "mindfulReader" 
+        "ato"
+        "ndis";
+    }
+}
