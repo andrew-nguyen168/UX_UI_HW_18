@@ -1,10 +1,13 @@
 body{
     margin: 0;
+    padding: 0;
     /* Update font later */
     font-family: Arial, Helvetica, sans-serif; 
 }
 h1 {
-    padding: 2%;
+    /* background-color: red; */
+    margin: 100px;
+
 }
 
 /* ------ Navigation ------ */
@@ -12,7 +15,7 @@ h1 {
     border-bottom: 1px solid #B2B2B2;
 }
 .logo {
-    height:100px;
+    height: 100px;
 }
 .inline-block {
     display: inline-block;
@@ -20,7 +23,7 @@ h1 {
 }
 .inline-block logo { 
     /* Coding here doesn't change anything */
-    width: 23%;
+    /* width: 23%; */
 }
 nav {
     width: 92%;
@@ -28,29 +31,48 @@ nav {
     text-align: right;
 }
 nav li {
-    padding: 3%;
+    padding: 20px;
     font-weight: bold;
 }
-
 /* ------ Hero Section ------ */
-ul {
-    width: 50%;
-    margin-left: auto;
+#introduction {
+    font-size: 50px;
 }
-.heroImg {
-  height:500px;
+button {
+    border-radius: 30px;
+    background-color: #80D1FF;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.heroSection {
+  height: 60vh;
   padding: 25px;
-  border: 1px solid;
+  background-color: #F4F4F4;
 }
 .content {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
+    padding: 30px;
     box-shadow: 5px;
 }
+/* About Me Section */
+.aboutMe {
+    display: flex;
+    margin: 50px;
+    height: 50vh;
+
+}
+.aboutMe img {
+    border-radius: 30px;
+    height: 335px;
+}
+
 
 /* ----- My Skills Section ------ */
 .mySkills {
-    height: 700px;
+    height: 80vh;
 }
 .flexContainer {
     display: flex;
@@ -58,13 +80,16 @@ ul {
 .skill {
     width:33%;
     margin:30px 50px;
-    padding: 30px;
+    padding: 50px;
+
 
 }
-
+.mySkills img {
+    height: 100px;
+}
 /* ------ My Work Section ------ */
 .myWork {
-    height: 800px;
+    height: 100vh;
 }
 .workGrid {
     display: grid;
@@ -77,6 +102,9 @@ ul {
     padding: 50px;
     /* top > right > bottom > left */
     margin: 30px 10px 30px 10px;
+}
+.projectContainer img {
+    height: 340px;
 }
 #Enroute {
     grid-area: enroute;
