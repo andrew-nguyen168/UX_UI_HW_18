@@ -4,13 +4,13 @@ body{
     /* Update font later */
     font-family: Arial, Helvetica, sans-serif; 
 }
-h1 {
-    /* background-color: red; */
-    margin: 100px;
-
+.title {
+    width: 70%;
+    margin: auto;
+    padding: 50px 10px;
+    font-size: 36px;
 }
-
-/* ------ Navigation ------ */
+/*  Navigation  */
 .navigation {
     border-bottom: 1px solid #B2B2B2;
 }
@@ -21,10 +21,6 @@ h1 {
     display: inline-block;
     vertical-align: top;
 }
-.inline-block logo { 
-    /* Coding here doesn't change anything */
-    /* width: 23%; */
-}
 nav {
     width: 92%;
     padding: 1px;
@@ -34,74 +30,94 @@ nav li {
     padding: 20px;
     font-weight: bold;
 }
-/* ------ Hero Section ------ */
+/*  Hero Section  */
+.heroSection {
+  height: 500px;
+  padding: 25px;
+  background-color: #F4F4F4;
+}
+.content {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
 #introduction {
     font-size: 50px;
+}
+#introduction a {
+    color: #EA4848;
+}
+#introduction u {
+    color: #489CEA;
+}
+.content p {
+    color: #757575;
 }
 button {
     border-radius: 30px;
     background-color: #80D1FF;
     border: none;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
 }
-.heroSection {
-  height: 60vh;
-  padding: 25px;
-  background-color: #F4F4F4;
-}
-.content {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px;
-    box-shadow: 5px;
-}
 /* About Me Section */
-.aboutMe {
+.aboutContainer {
     display: flex;
-    margin: 50px;
-    height: 50vh;
-
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    height: 500px;
 }
-.aboutMe img {
-    border-radius: 30px;
+.aboutContainer p {
+    margin: 50px 50px 30px 0px;
+    font-size: 24px;
+}
+.aboutContainer img {
+    border-radius: 50px;
+    margin: 10px;
+    padding: 30px;
     height: 335px;
+    width: 335px;
 }
-
-
-/* ----- My Skills Section ------ */
+/*  My Skills Section  */
 .mySkills {
-    height: 80vh;
+    height: 90vh;
 }
 .flexContainer {
     display: flex;
+    width: 70%;
+    margin: auto;
 }
 .skill {
     width:33%;
-    margin:30px 50px;
-    padding: 50px;
-
-
+    margin: 20px 30px;
+    padding: 20px;
 }
 .mySkills img {
     height: 100px;
 }
-/* ------ My Work Section ------ */
+/*  My Work Section  */
 .myWork {
-    height: 100vh;
+    height: 50vh;
 }
 .workGrid {
     display: grid;
+    margin: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "enroute mindfulReader" 
     "ato ndis";
 }
 .projectContainer {
-    padding: 50px;
     /* top > right > bottom > left */
-    margin: 30px 10px 30px 10px;
+    width: 70%;
+    margin: auto;
+    /* margin: 20px 10px; */
+    padding: 20px 30px;
+    border:1px solid #b2b2b2;
+    border-radius: 30px;
 }
 .projectContainer img {
     height: 340px;
@@ -119,7 +135,7 @@ button {
     grid-area: ndis;
 }
 
-/* ----- Footer ------ */
+/*  Footer  */
 footer {
     background-color: #373738;
     padding-right: 10%;
@@ -136,10 +152,10 @@ footer li {
 }
 
 /* Mobile Media Query */
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 800px) {
     .workGrid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 50%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "enroute"
